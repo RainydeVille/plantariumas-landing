@@ -23,10 +23,9 @@ export default function Navbar() {
 
         <ul className={styles.navRight}>
           <li>
-            <Link href="/prisijungti">Prisijungti</Link>
-          </li>
-          <li>
-            <Link href="/registruotis">Registruotis</Link>
+            <Link href="/login" className={styles.iconButton}>
+              <span className="material-symbols-outlined">person</span>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -8,4 +8,11 @@
     background-size: cover;
     background-position: center;
   }
+
+  .overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+  }
 }

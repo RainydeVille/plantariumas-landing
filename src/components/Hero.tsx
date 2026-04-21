@@ -14,13 +14,14 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 40000); //2 minutes
+    }, 120000); //2 minutes
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className={styles.hero}>
+      {/* Framer motion image animation */}
       <AnimatePresence>
         <motion.div
           key={index}

@@ -10,9 +10,41 @@
   }
 
   .overlay {
-    position: relative;
-    z-index: 2;
-    color: white;
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    place-items: center;
+
     text-align: center;
+    z-index: 2;
+    .heroContent {
+      max-width: 80vh;
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+      }
+      .btn {
+        color: #ffffff;
+
+        padding: 1.5rem 1.5rem;
+        border: none;
+        border-radius: 1rem;
+        width: 15rem;
+
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .registerBtn {
+        background-color: #435235;
+        margin-bottom: 1rem;
+      }
+      .loginBtn {
+        background-color: #647a4e;
+      }
+    }
   }
 }

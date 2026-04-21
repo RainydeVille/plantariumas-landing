@@ -37,11 +37,11 @@ export default function Hero() {
       <div className={styles.overlay}>
         <div className={styles.heroContent}>
           <h2 className={styles.heroTitle}>Rūpintis savo augalais dar niekada nebuvo taip lengva 💚</h2>
-          <button>
+          <button className={`${styles.btn} ${styles.registerBtn}`}>
             <Link href="/registruotis">Prisijunk</Link>
           </button>
           <br />
-          <button>
+          <button className={`${styles.btn} ${styles.loginBtn}`}>
             <Link href="/prisijungti">Jau turiu paskyrą</Link>
           </button>
         </div>

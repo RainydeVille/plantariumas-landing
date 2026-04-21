@@ -1,11 +1,12 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main>
-        <h1 id="logoFont">Tis were main stuff goes</h1>
+        <Hero />
       </main>
     </>
   );

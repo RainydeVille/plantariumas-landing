@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 //image array
 const images = ["/images/hero1.jpg", "/images/hero2.jpg", "/images/hero3.jpg"];
@@ -36,6 +37,13 @@ export default function Hero() {
       <div className={styles.overlay}>
         <div className={styles.heroContent}>
           <h2 className={styles.heroTitle}>Rūpintis savo augalais dar niekada nebuvo taip lengva 💚</h2>
+          <button>
+            <Link href="/registruotis">Prisijunk</Link>
+          </button>
+          <br />
+          <button>
+            <Link href="/prisijungti">Jau turiu paskyrą</Link>
+          </button>
         </div>
       </div>
     </section>

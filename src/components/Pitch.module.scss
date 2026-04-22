@@ -1,0 +1,33 @@
+.pitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0 10rem;
+  margin-top: 5rem;
+  .imageWrapper {
+    flex: 1;
+    .image {
+      width: 100%;
+      height: 400px;
+      width: 400px;
+    }
+  }
+  .content {
+    flex: 1;
+    .title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #33753f;
+    }
+    .text {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}

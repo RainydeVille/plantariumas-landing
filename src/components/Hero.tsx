@@ -36,7 +36,7 @@ export default function Hero() {
       </AnimatePresence>
       <div className={styles.overlay}>
         <div className={styles.heroContent}>
-          <h2 className={styles.heroTitle}>Rūpintis savo augalais dar niekada nebuvo taip lengva 💚</h2>
+          <h2 className={styles.heroTitle}>Rūpintis savo augalais dar niekada nebuvo taip paprasta 💚</h2>
           <button className={`${styles.btn} ${styles.registerBtn}`}>
             <Link href="/registruotis">Prisijunk</Link>
           </button>

@@ -1,5 +1,14 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+
+  background: transparent;
+  background: rgba(26, 63, 33, 0.4);
+  backdrop-filter: blur(0.3rem);
+
+  z-index: 10;
   .nav {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -7,7 +16,6 @@
     padding: 1rem 4rem;
     font-size: 1.5rem;
     font-weight: 800;
-    background-color: rgb(44, 105, 102);
     .navLeft {
       justify-self: end;
       display: flex;

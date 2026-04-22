@@ -1,5 +1,5 @@
 .hero {
-  height: 90vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   .bg {
@@ -7,6 +7,7 @@
     inset: 0;
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(0.3rem);
   }
 
   .overlay {
@@ -21,8 +22,8 @@
     .heroContent {
       max-width: 80vh;
       h2 {
-        margin-bottom: 1rem;
         font-size: 3rem;
+        margin-top: 5rem;
       }
       .btn {
         color: #ffffff;
@@ -39,11 +40,11 @@
         transition: all 0.25s ease;
       }
       .registerBtn {
-        background-color: #435235;
-        margin-bottom: 1rem;
+        background-color: #25562e;
+        margin: 1.5rem 0;
       }
       .loginBtn {
-        background-color: #647a4e;
+        background-color: #33753f;
       }
     }
   }

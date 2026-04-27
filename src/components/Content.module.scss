@@ -1,10 +1,9 @@
-.pitch {
+.content {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  margin: 0 10rem;
-  margin-top: 5rem;
+  margin: 10rem 10rem 0 10rem;
   .imageWrapper {
     flex: 1;
     .image {
@@ -12,7 +11,8 @@
       width: 540px;
     }
   }
-  .content {
+
+  .contentInfo {
     flex: 1;
     .title {
       font-size: 2rem;
@@ -25,8 +25,4 @@
       font-weight: 500;
     }
   }
-}
-
-.reverse {
-  flex-direction: row-reverse;
 }

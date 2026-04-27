@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <h1 id="logoFont" className={styles.logo}>
-          Plantariumas
+          <Link href="/">Plantariumas</Link>
         </h1>
 
         <ul className={styles.navLeft}>

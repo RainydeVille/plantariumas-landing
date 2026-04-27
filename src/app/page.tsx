@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main">
         <Hero />
         <Pitch
           image="/images/pitch1.jpg"

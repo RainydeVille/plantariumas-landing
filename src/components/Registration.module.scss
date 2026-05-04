@@ -1,8 +1,84 @@
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-  margin: 10rem 10rem 0 10rem;
+.formWrapper {
+  background-image: url("/images/hero1.jpg");
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(0.3rem);
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 15rem 10rem 0 10rem;
+    .title {
+      font-size: 2.5rem;
+    }
+    .label {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    .input {
+      width: 30%;
+      padding: 0.5rem 1rem;
+
+      border-radius: 0.5rem;
+      border: 1px solid rgba(37, 86, 46, 0.25);
+
+      background: rgba(255, 255, 255, 0.8);
+      color: #1a3f21;
+
+      font-size: 0.95rem;
+
+      transition: all 0.4s ease;
+
+      &::placeholder {
+        color: rgba(37, 86, 46, 0.5);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #25562e;
+        box-shadow: 0 0 0 3px rgba(37, 86, 46, 0.15);
+        background: rgba(255, 255, 255, 1);
+      }
+
+      &:hover {
+        border-color: rgba(37, 86, 46, 0.5);
+      }
+    }
+
+    .btn {
+      width: 15%;
+      padding: 0.6rem 1rem;
+
+      border: none;
+      border-radius: 0.5rem;
+
+      background: linear-gradient(135deg, #2f6d3a, #25562e);
+      color: #ffffff;
+
+      font-size: 0.95rem;
+      font-weight: 600;
+
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(37, 86, 46, 0.25);
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 10px rgba(37, 86, 46, 0.2);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(37, 86, 46, 0.25);
+      }
+    }
+  }
 }

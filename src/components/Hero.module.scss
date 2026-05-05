@@ -2,13 +2,12 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   .bg {
     position: absolute;
     inset: 0;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(0.3rem);
   }
 
   .overlay {
@@ -19,6 +18,7 @@
     place-items: center;
 
     text-align: center;
+    //backdrop-filter: blur(2px); //BACKGROUND BLUR
     z-index: 2;
     .heroContent {
       max-width: 80vh;
@@ -34,18 +34,34 @@
         border-radius: 1rem;
         width: 15rem;
 
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 600;
 
         cursor: pointer;
-        transition: all 0.25s ease;
+        transition: all 0.5s ease;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
       }
       .registerBtn {
         background-color: #25562e;
         margin: 1.5rem 0;
+
+        &:hover {
+          background-color: #2d6938;
+        }
       }
       .loginBtn {
         background-color: #33753f;
+
+        &:hover {
+          background-color: #2e6838;
+        }
       }
     }
   }
